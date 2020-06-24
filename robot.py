@@ -66,3 +66,18 @@ class PyRobot():
         right_now = datetime.now().replace(tzinfo=timezone.utc).timestamp()
 
         return (market_end_time >= right_now >= regular_market_start_time)
+
+    def create_portfolio(self):
+        pass
+
+    def create_trade(self):
+        pass
+
+    def create_stock_frame(self):
+        pass
+
+    def grab_current_quotes(self) -> dict:
+        pass
+
+    def grab_historical_prices(self) -> List(dict):
+        pass
