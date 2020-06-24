@@ -2,6 +2,7 @@ from typing import List
 from typing import Dict
 from typing import Union
 from typing import Optional
+from typing import Tuple
 
 
 class Portfolio():
@@ -40,7 +41,44 @@ class Portfolio():
                     asset_type=position["asset_type"]
                 )
 
+            return self.positions
+
         else:
             raise TypeError("Positions must be a list of dictionaries !")
 
         return self.positions
+
+    def remove_position(self, symbol: str) -> Tuple(bool, str):
+
+        if symbol in self.positions:
+            del self.positions(symbol)
+
+            return (True, "{Symbol} was successfully removed !".format(Symbol=symbol))
+
+        else:
+            return (False, "{Symbol} did not exist in the portfolio !".format(Symbol=symbol))
+
+    def total_allocation(self):
+        pass
+
+    def total_market_value(self):
+        pass
+
+    def risk_exposure(self):
+        pass
+
+    def in_portfolio(self, symbol: str) -> bool:
+
+        if symbol in self.positions:
+            return True
+        else:
+            return False
+
+    def is_profitable(self, symbol: str, current_price: float) -> bool:
+
+        purchase_price = self.positions[symbol]["purchase_price"]
+
+        if purchase_price <= current_price:
+            return True
+        else:
+            return False
