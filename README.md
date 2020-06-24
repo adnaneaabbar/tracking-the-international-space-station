@@ -14,6 +14,12 @@ This bot will mimic 4 common scenarios :
 
 ---
 
+# Classes
+
+![solution](https://user-images.githubusercontent.com/44345798/85594654-0702af00-b640-11ea-8553-240dbeb441df.png)
+
+---
+
 # Inspiration
 
 This project was the fruit of an inspiration from the previously finished [stock-trading-system](https://github.com/adnaneaabbar/stock-trading-system) project. I like to to look at it as the continuity of my **data science/finance and trading** orientation.
