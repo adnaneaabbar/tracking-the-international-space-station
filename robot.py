@@ -1,4 +1,5 @@
 import pandas as pd
+
 from td.client import TDClient
 from td.utils import milliseconds_since_epoch
 
@@ -79,5 +80,5 @@ class PyRobot():
     def grab_current_quotes(self) -> dict:
         pass
 
-    def grab_historical_prices(self) -> List(dict):
+    def grab_historical_prices(self) -> List[Dict]:
         pass

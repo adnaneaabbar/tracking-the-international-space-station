@@ -48,24 +48,15 @@ class Portfolio():
 
         return self.positions
 
-    def remove_position(self, symbol: str) -> Tuple(bool, str):
+    def remove_position(self, symbol: str) -> Tuple[bool, str]:
 
         if symbol in self.positions:
-            del self.positions(symbol)
+            del self.positions[symbol]
 
             return (True, "{Symbol} was successfully removed !".format(Symbol=symbol))
 
         else:
             return (False, "{Symbol} did not exist in the portfolio !".format(Symbol=symbol))
-
-    def total_allocation(self):
-        pass
-
-    def total_market_value(self):
-        pass
-
-    def risk_exposure(self):
-        pass
 
     def in_portfolio(self, symbol: str) -> bool:
 
@@ -82,3 +73,12 @@ class Portfolio():
             return True
         else:
             return False
+
+    def total_allocation(self):
+        pass
+
+    def total_market_value(self):
+        pass
+
+    def risk_exposure(self):
+        pass
