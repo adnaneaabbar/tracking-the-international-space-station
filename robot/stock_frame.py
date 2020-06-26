@@ -15,7 +15,7 @@ import pandas.core.window as RollingGroupBy
 
 class StockFrame():
 
-    def __init__(self, data: List[dict]) -> None:
+    def __init__(self, data: List[Dict]) -> None:
 
         self._data = data
         self._frame: pd.DataFrame = self.create_frame()
@@ -67,7 +67,7 @@ class StockFrame():
 
         return price_df
 
-    def add_rows(self, data: dict) -> None:
+    def add_rows(self, data: Dict) -> None:
 
         column_names = ['open', 'close', 'high', 'low', 'volume']
 
@@ -98,5 +98,5 @@ class StockFrame():
     def do_indicators_exist(self, column_names: List[str]) -> bool:
         pass
 
-    def _check_signals(self, indicators: dict) -> Union[pd.Series, None]:
+    def _check_signals(self, indicators: Dict) -> Union[pd.Series, None]:
         pass

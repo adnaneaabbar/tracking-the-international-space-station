@@ -21,8 +21,8 @@ class PyRobot():
         self.redirect_uri: str = redirect_uri
         self.credentials_path: str = credentials_path
         self.session: TDClient = self._create_session()
-        self.trades: dict = {}
-        self.historical_prices: dict = {}
+        self.trades: Dict = {}
+        self.historical_prices: Dict = {}
         self.stock_frame = None
 
     def _create_session(self) -> TDClient:
@@ -77,7 +77,7 @@ class PyRobot():
     def create_stock_frame(self):
         pass
 
-    def grab_current_quotes(self) -> dict:
+    def grab_current_quotes(self) -> Dict:
         pass
 
     def grab_historical_prices(self) -> List[Dict]:
