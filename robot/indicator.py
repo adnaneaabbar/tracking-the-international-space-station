@@ -9,7 +9,7 @@ from typing import Optional
 from typing import Tuple
 from typing import Any
 
-from stock_frame import StockFrame
+from robot.stock_frame import StockFrame
 
 
 class Indicators():
