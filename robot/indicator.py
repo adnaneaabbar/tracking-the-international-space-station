@@ -9,7 +9,7 @@ from typing import Optional
 from typing import Tuple
 from typing import Any
 
-from robot.stock_frame import StockFrame
+from stock_frame import StockFrame
 
 
 class Indicators():
@@ -41,7 +41,7 @@ class Indicators():
         else:
             return self._indicator_signals
 
-    @propertyk
+    @property
     def price_data_frame(self) -> pd.DataFrame:
         return self._frame
 
