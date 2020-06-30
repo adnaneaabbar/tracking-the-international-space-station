@@ -32,7 +32,7 @@ Exploring space, the ISS, through some of the basics of data science.
 
 # Deploying
 
-- Create a mobile Web Application on the cloud so you can share the location of the ISS.
+- Create a Web Application on the cloud so you can share the location of the ISS.
 
 
 
