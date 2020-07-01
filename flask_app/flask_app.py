@@ -52,7 +52,7 @@ def ISS_Tracker():
 
         # add position to plot
         plt.scatter(x=[translated_iss_location[0]], y=[translated_iss_location[1]],
-                    c='blue', s=500, marker="P")
+                    c='blue', s=400, marker="P")
 
     plt.axis('off')
     img = io.BytesIO()
@@ -61,7 +61,7 @@ def ISS_Tracker():
     plot_url = base64.b64encode(img.getvalue()).decode()
     
     #image to be decoded
-    return render_template('locate-iss.html',
+    return render_template('location.html',
         forecast_plot = Markup('<img src="data:image/png;base64,{}" style="width:100%;vertical-align:top">'.format(plot_url))
         )
 
